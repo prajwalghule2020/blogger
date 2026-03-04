@@ -1,0 +1,80 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.log
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env.local
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# Environment & Secrets
+# =============================================================================
+.env
+.env.*
+!.env.example
+
+# =============================================================================
+# Next.js / Node
+# =============================================================================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+frontend/build/
+frontend/.turbo/
+frontend/tsconfig.tsbuildinfo
+frontend/.vercel/
+frontend/yarn-error.log
+frontend/npm-debug.log*
+frontend/pnpm-debug.log*
+
+# =============================================================================
+# Output / Generated files
+# =============================================================================
+output/
+stitch_screens/
+
+# =============================================================================
+# OS & Editor
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# Misc
+# =============================================================================
+*.bak
+*.tmp
+.cache/

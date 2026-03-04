@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "midnight": "#0A0E14",
+                        "midnight-light": "#151b26",
+                        "midnight-lighter": "#1f293a",
+                        "coral": "#FF7F50", // Coral
+                        "coral-dark": "#E06840",
+                        "coral-light": "#FF9F7D",
+                        "background-dark": "#0A0E14",
+                        "surface-dark": "#11161F",
+                        "border-dark": "#2A3441",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-midnight text-slate-100 font-display selection:bg-coral selection:text-white h-screen flex flex-col items-center justify-center">
+<div class="w-full max-w-md p-8 sm:p-12 bg-midnight-light border border-border-dark rounded-xl shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-coral/0 via-coral/80 to-coral/0"></div>
+<div class="mb-10 text-center">
+<div class="inline-flex items-center justify-center size-12 bg-coral rounded-lg text-white mb-6 shadow-lg shadow-coral/20">
+<span class="material-symbols-outlined text-[28px]">edit_note</span>
+</div>
+<h1 class="text-3xl font-black text-white tracking-tight mb-2">Welcome Back</h1>
+<p class="text-slate-400 text-sm font-medium">Sign in to your content pipeline</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-400" for="email">Email Address</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-500 text-[20px]">mail</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-3 bg-surface-dark border border-border-dark rounded-lg text-slate-200 placeholder-slate-600 focus:outline-none focus:border-coral focus:ring-1 focus:ring-coral transition-colors sm:text-sm font-medium" id="email" placeholder="name@company.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-400" for="password">Password</label>
+<a class="text-xs font-bold text-coral hover:text-coral-light transition-colors" href="#">Forgot password?</a>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-500 text-[20px]">lock</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-3 bg-surface-dark border border-border-dark rounded-lg text-slate-200 placeholder-slate-600 focus:outline-none focus:border-coral focus:ring-1 focus:ring-coral transition-colors sm:text-sm font-medium" id="password" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<input class="h-4 w-4 rounded border-border-dark bg-surface-dark text-coral focus:ring-coral focus:ring-offset-midnight" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="text-sm font-medium text-slate-400 select-none" for="remember-me">Remember me for 30 days</label>
+</div>
+<button class="group w-full flex items-center justify-center py-3 px-4 border border-transparent rounded-lg text-sm font-bold text-white bg-coral hover:bg-coral-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-coral focus:ring-offset-midnight transition-all shadow-lg shadow-coral/20 hover:shadow-coral/30" type="button">
+            Sign In
+            <span class="material-symbols-outlined ml-2 text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</form>
+<div class="mt-8 pt-6 border-t border-border-dark text-center">
+<p class="text-sm text-slate-400">
+            Don't have an account? 
+            <a class="font-bold text-coral hover:text-coral-light transition-colors" href="#">Request access</a>
+</p>
+</div>
+</div>
+<div class="mt-8 flex gap-6 text-slate-500 text-xs font-medium">
+<a class="hover:text-slate-300 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-slate-300 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-slate-300 transition-colors" href="#">Contact Support</a>
+</div>
+
+</body></html>
